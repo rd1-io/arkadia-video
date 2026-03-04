@@ -3,14 +3,6 @@
   size: A4;
   margin: 24mm 18mm 20mm 18mm;
 
-  @top-right {
-    content: url("logo.png");
-    width: 5mm;
-    height: 5mm;
-    margin-top: -2mm;
-    opacity: 0.15;
-  }
-
   @bottom-left {
     content: "Подготовлено rd1.io  ·  март 2026";
     font-family: "Helvetica Neue", "Arial", sans-serif;
@@ -29,6 +21,18 @@
 
 @page:first {
   margin-top: 30mm;
+}
+
+/* ── Document header with logo ── */
+.doc-header {
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+.header-logo {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
 }
 
 /* ── Typography ── */

@@ -4,6 +4,7 @@ DOCS    := docs
 PDFDIR  := pdf
 CSS     := $(DOCS)/style.css
 LOGO    := $(DOCS)/logo.png
+HEADER  := $(DOCS)/header.html
 
 MD_FILES  := $(sort $(wildcard $(DOCS)/*.md))
 PDF_FILES := $(patsubst $(DOCS)/%.md,$(PDFDIR)/%.pdf,$(MD_FILES))
@@ -17,11 +18,12 @@ release: build-pdf
 
 build-pdf: $(PDF_FILES)
 
-$(PDFDIR)/%.pdf: $(DOCS)/%.md $(CSS) $(LOGO) | $(PDFDIR)
+$(PDFDIR)/%.pdf: $(DOCS)/%.md $(CSS) $(LOGO) $(HEADER) | $(PDFDIR)
 	pandoc "$<" \
 		--from markdown \
 		--to html5 \
 		--css "$(CSS)" \
+		--include-before-body "$(HEADER)" \
 		--embed-resources --standalone \
 		--metadata title=" " \
 		-o "$<.tmp.html"
