@@ -254,9 +254,10 @@ em {
 
 /* ── Images ── */
 img {
-  max-width: 108% !important;
+  width: 130% !important;
+  max-width: 130% !important;
   height: auto !important;
-  margin-left: -4%;
+  margin-left: -15%;
   page-break-inside: avoid;
   page-break-before: auto;
 }
