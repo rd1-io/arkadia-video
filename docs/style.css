@@ -250,6 +250,13 @@ em {
   color: #555;
 }
 
+/* ── Images ── */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  page-break-inside: avoid;
+}
+
 /* ── Links ── */
 a {
   color: #e84670;
