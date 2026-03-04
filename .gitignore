@@ -3,5 +3,6 @@
 *.dwl2
 *.xlsx
 *.pdf
+!pdf/*.pdf
 *.jpg
 *.png
