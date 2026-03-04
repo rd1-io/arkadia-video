@@ -8,3 +8,4 @@
 *.png
 !docs/logo.png
 !docs/camera_map.png
+!docs/network_topology.png
