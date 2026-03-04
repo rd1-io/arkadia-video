@@ -193,28 +193,39 @@ li {
 /* ── Task lists ── */
 ul.task-list {
   list-style: none !important;
-  padding-left: 4px !important;
+  padding-left: 0 !important;
+  margin: 8px 0;
 }
 
 ul.task-list li {
-  margin-bottom: 5px;
-  padding-left: 2px;
+  display: block !important;
+  margin-bottom: 6px;
+  padding: 4px 0 4px 28px;
+  position: relative;
+  line-height: 1.4;
+  border-bottom: 1px dotted #eee;
+}
+
+ul.task-list li:last-child {
+  border-bottom: none;
 }
 
 ul.task-list li label {
-  display: inline;
+  display: inline !important;
 }
 
 ul.task-list li input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
-  display: inline-block !important;
+  display: block !important;
+  position: absolute;
+  left: 4px;
+  top: 6px;
   width: 13px !important;
   height: 13px !important;
   min-width: 13px !important;
   min-height: 13px !important;
-  margin: 0 8px 0 0 !important;
-  vertical-align: middle;
+  margin: 0 !important;
   border: 1.5px solid #ccc !important;
   border-radius: 3px;
   background: #fff !important;
