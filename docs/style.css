@@ -5,9 +5,10 @@
 
   @top-right {
     content: url("logo.png");
-    height: 10mm;
-    margin-top: -6mm;
-    opacity: 0.12;
+    width: 5mm;
+    height: 5mm;
+    margin-top: -2mm;
+    opacity: 0.15;
   }
 
   @bottom-left {
