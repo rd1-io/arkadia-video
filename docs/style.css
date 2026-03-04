@@ -106,8 +106,6 @@ table {
   border-spacing: 0;
   margin: 14px 0;
   font-size: 8.5pt;
-  border-radius: 6px;
-  overflow: hidden;
   border: 1px solid #e0e0e0;
   page-break-inside: auto;
 }
